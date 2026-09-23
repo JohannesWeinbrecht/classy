@@ -4,11 +4,22 @@
 
 #let association(
   ..points,
+  name: none,
 ) = {
   cetz.draw.line(
     ..points,
     stroke: black,
     mark: (end: "straight", scale: 2),
+    name: name,
+  )
+}
+#let bi-association(
+  ..points,
+) = {
+  cetz.draw.line(
+    ..points,
+    stroke: black,
+    mark: (start: "straight", end: "straight", scale: 2),
   )
 }
 
