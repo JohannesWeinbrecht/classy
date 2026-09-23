@@ -80,6 +80,7 @@
   tag: (), // Defaulted to an empty array
   generics: (),
   padding: 8pt,
+  style: none
 ) = {
   // Check if generics exist to determine if extra top spacing is needed
   let has-generics = generics != none and generics != ()
