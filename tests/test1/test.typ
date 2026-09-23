@@ -1,5 +1,5 @@
-#import "@preview/cetz:0.5.2": *
-#import "@local/cetz-class:0.1.0": *
+#import "@preview/cetz:0.5.2"
+#import "/src/lib.typ": *
 
 #set page(width: 20cm, height: 15cm, margin: 2cm)
 
