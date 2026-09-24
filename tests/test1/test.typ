@@ -1,19 +1,17 @@
 #import "@preview/cetz:0.5.2"
 #import "/src/lib.typ": *
 
-#set page(width: 20cm, height: 15cm, margin: 2cm)
+#set page(height: auto, margin: 5mm, fill: none)
 
-= _classy_ test
-
-// Example usage demonstrating multiple tags
-#align(center)[
+#let test = {
+align(center)[
   #cetz.canvas({
     import cetz.draw: *
 
     class(
       (0, 0),
       "ConfigurationStore",
-      "Config",
+      "config",
       tag: ("interface", "singleton"), // Now accepts multiple tags
       generics: "T",
       fields: (
@@ -24,5 +22,24 @@
         [_- loadConfig(): void_]
       )
     )
+
+    class(
+      (rel: (5, 0), to: "config.east"),
+      "CetZ",
+      "cetz",
+      tag: ("Singleton"), // Now accepts multiple tags
+      generics: (),
+      fields: (),
+      methods: ()
+    )
+    class(
+      (rel:(0, -5), to: "cetz.south"),
+      "Classy",
+      "classy"
+    )
+    inheritance("classy", "cetz")
+
   })
 ]
+}
+#test

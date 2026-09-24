@@ -28,7 +28,6 @@
 ) = {
   cetz.draw.line(
     ..points,
-    stroke: black,
     mark: (end: ">", scale: 2),
   )
 }
