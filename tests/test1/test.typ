@@ -3,7 +3,7 @@
 
 #set page(width: 20cm, height: 15cm, margin: 2cm)
 
-= cetz-class Test
+= _classy_ test
 
 // Example usage demonstrating multiple tags
 #align(center)[
