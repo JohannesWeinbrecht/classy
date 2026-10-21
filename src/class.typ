@@ -84,7 +84,7 @@
           "body.north-east",
           box(
             stroke: current-stroke,
-            fill: none, // Set to none so dark mode background isn't covered by white
+            fill: white, // set to white so the box covers the boarder of the other box
             inset: (x: 4pt, y: 4pt),
             [#gen-display],
           ),
