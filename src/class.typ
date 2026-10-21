@@ -60,7 +60,7 @@
     let class-body = grid(
       columns: 1,
       inset: padding,
-      header-content,
+      align(center, header-content),
       grid.hline(stroke: current-stroke),
       field-content,
       grid.hline(stroke: current-stroke),
