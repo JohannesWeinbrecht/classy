@@ -19,16 +19,14 @@
         set-style(stroke: (paint: white))
       }
 
-      class(
+      simple-class(
         (0,0),
         "CetZ",
         "cetz",
         tag: ("Singleton"), // Now accepts multiple tags
         generics: (),
-        fields: (),
-        methods: ()
       )
-      class(
+      simple-class(
         (rel:(0, -3), to: "cetz.south"),
         "Classy",
         "classy"

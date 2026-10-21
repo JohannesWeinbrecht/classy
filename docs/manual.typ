@@ -25,8 +25,9 @@
 == Tests
 
 #import "/tests/test1/test.typ": test as test1
+#import "/tests/test2/test.typ": test as test2
 
-#let tests = (test1,)
+#let tests = (test1,test2,)
 
 #for (i,t) in tests.enumerate(start: 1){
   heading("Test " + str(i), level: 3)
