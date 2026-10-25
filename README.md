@@ -1,6 +1,6 @@
-# classy
+# classy :sparkles:
 
-_Classy_ UML class charts using CetZ
+_classy_ :sparkles: UML class charts using CetZ
 
 ## Acknowledgment
 
