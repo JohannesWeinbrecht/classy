@@ -9,6 +9,16 @@
   cetz.draw.line(
     ..points,
     stroke: black,
+    name: name,
+  )
+}
+#let uni-association(
+  ..points,
+  name: none,
+) = {
+  cetz.draw.line(
+    ..points,
+    stroke: black,
     mark: (end: "straight", scale: 2),
     name: name,
   )
